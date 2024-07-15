@@ -146,3 +146,19 @@ const Navbar = () => {
 
 step=16 in app.jsx
 mount the nav.jsx in app.jsx
+
+
+step=17 in index.html
+
+add the link for font from google fonts as i added poopins and outfit in the link above the title
+=>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins&display=swap" rel="stylesheet">
+<=
+
+add css in index.css 
+  font-family: poppins;
+
+step=18 in navbar.css
+add css as below.

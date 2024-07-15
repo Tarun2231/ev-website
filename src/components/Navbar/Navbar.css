@@ -1,0 +1,44 @@
+.nav{
+    /* the content in the nav will be displayed side ti side in a single row */
+    display: flex;
+    color:white;
+
+    /*the content will be displayed in the each corners with space between them  */
+    justify-content: space-between;
+
+    /* all the content in this nav will be displayed in center */
+    align-items: center;
+
+    /* 20px from top and bottom and 120px from left and right */
+    margin: 20px 120px;
+
+}
+
+.nav-logo{
+    font-family: outfit;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+
+    /* list dots will be removed  */
+    list-style: none;
+
+    font-size: 18px;
+
+    /* gap between the each content is given by 60px */
+    gap: 60px;
+}
+
+.nav-contact{
+
+    /*radius is given so that the the button should seems to be curve in the edges  */
+    border-radius: 40px;
+    
+    padding: 10px 30px;
+    background: #fff;
+    color: black;
+}
