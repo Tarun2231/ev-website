@@ -1,0 +1,21 @@
+.background{
+    /* full covered the displayof the screen */
+    height: 100%;
+    width: 100%;
+    
+    float: left;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: none;
+
+    /* posotion fixed to be used when ever we are adding an image that should be fixied in that position */
+    position: fixed;
+
+    /* image will be covered in the backround for that we need to use object fit */
+    object-fit: cover;
+
+    /* if we use the z index the the image will be behined the content. */
+    z-index: -1; 
+}
