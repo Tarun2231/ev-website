@@ -162,3 +162,96 @@ add css in index.css
 
 step=18 in navbar.css
 add css as below.
+
+
+stap=18 in navbar.css
+
+write the below styles
+=>
+.nav{
+    /* the content in the nav will be displayed side ti side in a single row */
+    display: flex;
+    color:white;
+
+    /*the content will be displayed in the each corners with space between them  */
+    justify-content: space-between;
+
+    /* all the content in this nav will be displayed in center */
+    align-items: center;
+
+    /* 20px from top and bottom and 120px from left and right */
+    margin: 20px 120px;
+
+}
+
+.nav-logo{
+    font-family: outfit;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.nav-menu{
+    display: flex;
+    align-items: center;
+
+    /* list dots will be removed  */
+    list-style: none;
+
+    font-size: 18px;
+
+    /* gap between the each content is given by 60px */
+    gap: 60px;
+}
+
+.nav-contact{
+
+    /*radius is given so that the the button should seems to be curve in the edges  */
+    border-radius: 40px;
+    
+    padding: 10px 30px;
+    background: #fff;
+    color: black;
+}
+<=
+
+
+step=19 in hero.jsx
+create a classname as hero in div and mount in app.jsx
+
+
+
+step=20 in app.jsx
+add the hero component and add the props
+=>
+<Hero
+
+        // in the hero component we will pass the props
+        // 1st we will pass setplaystatus using that we can change the valiue of playstatus either true or false
+        // using that ever video in the backround will be playes or paused.
+        setplayStatus={setplayStatus}
+
+        // next we will pass the heroData
+        heroData={heroData}
+
+        // we will pass the herocount
+        heroCount={heroCount}
+
+        // we will pass the setheroCount and playstatus
+        setheroCount={setheroCount}
+        playStatus={playStatus}
+      />
+<=
+
+
+step=21 in hero.jsx
+we will destructure those variable and functions 
+=>
+const Hero = ({heroData,heroCount,setheroCount,setplayStatus,playStatus}) => {
+<=
+now we will import the pause icon and play icon and arrow button.
+=>
+import arrow_btn from '../../assets/arrow_btn.png'
+import pause_icon from '../../assets/pause_icon.png'
+import play_icon from '../../assets/play_icon.png'
+<=
+next we will div.hero-text inside the div.hero
